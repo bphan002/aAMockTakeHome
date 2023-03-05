@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  },
+  "name": "aamocktakehome",
+  "description": "Welcome to a/A's take home challenge, this should be a fun project to put to practice what you've just learned from recap academy. There are instructions for each part (front and backend) in their respective folders. You are free to use any backend and frontend framework you like for this takehome. The requirements listed in each section are by no means a ceiling, please feel free to expand upon anything in the takehome if you have time to do so.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bphan002/aAMockTakeHome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bphan002/aAMockTakeHome/issues"
+  },
+  "homepage": "https://github.com/bphan002/aAMockTakeHome#readme"
+}
+
