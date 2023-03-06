@@ -17,12 +17,14 @@ const CoffeeIndex = () => {
 
     return (
         <aside>
-            <div className='coffee-header'>
-                <h2>Coffees</h2>
-                <button onClick={handleClick} >New Coffee</button>
-                {showCoffeeModal && <CoffeeModal/>}
+            <div className='coffee-modal'>
+                <div className='coffee-header'>
+                    <h2>Coffees</h2>
+                    <button onClick={handleClick} >New Coffee</button>
+                    {showCoffeeModal && <CoffeeModal/>}
+                </div>
+                {coffees.map(coffee => <CoffeeIndexItem {...coffee} />)}
             </div>
-            {coffees.map(coffee => <CoffeeIndexItem {...coffee} />)}
         </aside>
     )
 }
