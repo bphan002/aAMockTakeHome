@@ -1,0 +1,145 @@
+h1 {
+  font-size: 1.3rem;
+  margin: .5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+main, aside {
+  position: relative;
+}
+
+section {
+  text-align: center;
+  border-bottom: dotted orange 2px;
+}
+
+header, .border,.post-modal, input[name="title"], input[name="rating"], select[name="coffee"] {
+  border-style: solid;
+  border-color:white white orange brown;
+  border-width: 3px;
+  padding: 0rem .4rem;
+  border-top-left-radius: 15px;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+input,textarea {
+  margin-left: 1rem;
+}
+
+input[name="rating"] {
+  width: 4rem;
+}
+
+input[name="title"] {
+  width:90%;
+  height: 2rem;
+}
+
+.input-group {
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  height: 1rem;
+  margin: auto 0rem;
+}
+
+select[name="coffee"] {
+  height:1.3rem;
+  margin-left: .5rem;
+}
+
+button {
+  border-color: orange;
+  vertical-align: middle;
+  margin:auto 1rem;
+  width:8em;
+  border-radius: 10px 45px 15px 35px;
+}
+
+.post-modal {
+  border-radius: 0px 15px 0px 15px;
+  border-color:orange orange brown brown;
+  z-index:5;
+  background-color: white;
+}
+
+.two-column {
+  display:flex;
+  margin-left: auto;
+  margin-right:auto;
+  max-width: 800px;
+}
+
+.right-column {
+  padding: 0px 2rem;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+}
+
+.left-header {
+  display:flex;
+}
+
+.coffee-header {
+  display:flex;
+  justify-content: space-between;
+}
+
+
+.coffee-modal {
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  z-index:2;
+  height: 14rem;
+  background-color: white;
+}
+
+.border p {
+  height:1rem;
+}
+
+.coffee-modal h2, .post-modal h2 {
+  text-align: center;
+}
+
+.btn-format {
+  display:flex;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.btn-post {
+  width:95%;
+}
+
+.post-modal {
+  z-index: 5;
+  position: absolute;
+  width:60%;
+  left:50%;
+  right:50%;
+  margin-left: -159px;
+  margin-right: 159px;
+  padding: 1rem;
+}
+
+.post-rating-select-input-grp {
+  display:flex;
+  justify-content: space-around;
+  margin: 1rem 0px;
+}
+
