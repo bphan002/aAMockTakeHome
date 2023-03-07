@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 
 
 const PostModal = () => {
@@ -9,12 +9,18 @@ const PostModal = () => {
         text: '',
     })
 
+    useEffect(() => {
+        // fetch('http://127.0.0.1:5174:3000/coffee')
+        //     .then(response => response.json())
+        //     .then(data => console.log(data))
+    },[])
+
     //need a reference to get all the different kinds of coffee
     //lets give it the name coffees
     const coffees = ['Black','Latte','Espresso']
-    
-    
 
+
+    
     return (
         <div className='post-modal'>
             <form action="">
@@ -46,7 +52,7 @@ const PostModal = () => {
                     <div>
                         <label htmlFor="coffee">Coffee</label>
                         <select name="coffee" id="coffee">Coffee
-                            {coffees.map(coffee => <option value="coffee">{coffee}</option>)}
+                            {coffees.map((coffee,idx) => <option value="coffee" key={idx}>{coffee}</option>)}
                         </select>    
                     </div>
 

@@ -10,7 +10,6 @@ const CoffeeModal = () => {
     const handleChange = e => {
         const {name, value} = e.target
         setCoffee(prevState => ({...prevState, [name]:value}))
-        console.log(coffee)
     }
 
     return (

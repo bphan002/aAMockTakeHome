@@ -9,7 +9,7 @@ const DisplayStars = ({rating}) => {
     }
 
     return (
-        <p>{numberofStars.map(star => star)}</p>
+        <p>{numberofStars.map((star,idx) => <span key={idx}>{star}</span>)}</p>
     )
 
 }

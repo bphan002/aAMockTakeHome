@@ -13,5 +13,4 @@ const PostIndexItem = ({coffee, text, title, rating, caffeine_content }) => {
     )
 }
 
-
 export default PostIndexItem

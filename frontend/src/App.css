@@ -17,6 +17,10 @@ section {
   border-bottom: dotted orange 2px;
 }
 
+header {
+  position: relative;
+}
+
 header, .border,.post-modal, input[name="title"], input[name="rating"], select[name="coffee"] {
   border-style: solid;
   border-color:white white orange brown;
@@ -31,6 +35,8 @@ textarea {
 
 input,textarea {
   margin-left: 1rem;
+  margin-right:1rem;
+  width:90%;
 }
 
 input[name="rating"] {
@@ -67,11 +73,27 @@ button {
 }
 
 .post-modal {
+  position: absolute;
   border-radius: 0px 15px 0px 15px;
   border-color:orange orange brown brown;
   z-index:5;
   background-color: white;
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 20vh;
 }
+
+/* 
+.post-modal {
+  width:60%;
+  left:50%;
+  right:50%;
+  padding: rem;
+} */
 
 .two-column {
   display:flex;
@@ -123,20 +145,10 @@ header {
 }
 
 .btn-post {
-  margin-top: .5rem;
+  margin: .5rem 0rem;
   width:95%;
 }
 
-.post-modal {
-  z-index: 5;
-  position: absolute;
-  width:60%;
-  left:50%;
-  right:50%;
-  margin-left: -159px;
-  margin-right: 159px;
-  padding: 1rem;
-}
 
 .post-rating-select-input-grp {
   display:flex;
