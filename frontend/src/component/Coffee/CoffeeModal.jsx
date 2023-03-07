@@ -1,21 +1,33 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 const CoffeeModal = () => {
-    const [coffee, setCoffee] = useState({
+    const [newCoffee, setNewCoffee] = useState({
         name: '',
         year: '',
         caffeine:'',
     })
-    console.log(coffee)
+    console.log(newCoffee)
 
     const handleChange = e => {
         const {name, value} = e.target
-        setCoffee(prevState => ({...prevState, [name]:value}))
+        setNewCoffee(prevState => ({...prevState, [name]:value}))
     }
 
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        axios.post('http://localhost:5000/coffee',newCoffee)
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+    console.log('coffee modal')
     return (
         <div className='coffee-modal border'>
             <h2>New Coffee</h2>
-            <form action="">
+            <form onSubmit={(e) =>handleSubmit(e)}>
                 <div className='input-group'>
                     <label htmlFor="name">Name</label>
                     <input 
@@ -28,7 +40,8 @@ const CoffeeModal = () => {
                 <div className='input-group'>
                     <label htmlFor="year">Year</label>
                     <input
-                        min='1500' 
+                        min='1500'
+                        max="2023" 
                         type="number" 
                         name="year" 
                         id="year" 

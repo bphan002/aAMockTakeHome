@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "_id": "1",
         "title": "The First Cup",
         "coffee": "Espresso",
         "text": "I can't quite remember what it was, but it was made by Ann, I love it because of that.",
@@ -9,7 +9,7 @@
         "updatedAt": "2023-03-05T22:11:49.594+00:00"
     },
     {
-        "id": "2",
+        "_id": "2",
         "title": "The Second Cup",
         "coffee": "Black",
         "text": "She always makes the best coffee, I don't think there is any other like it.",
@@ -18,7 +18,7 @@
         "updatedAt": "2023-02-05T22:11:49.594+00:00"
     },
     {
-        "id": "3",
+        "_id": "3",
         "title": "The Third Cup",
         "coffee": "Latte",
         "text": "Ann made me a latte, this time with honey and cinnamon. She always puts so much of herself into the coffee she makes.",

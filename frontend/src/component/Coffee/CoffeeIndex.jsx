@@ -10,25 +10,32 @@ const CoffeeIndex = () => {
     const [loading, setLoading] = useState(true)
 
     const handleClick = () => {
-        //opens modal
         setShowCoffeeModal(true)
     }
 
     const coffeeModalRef = useRef()
+    useEffect(() => {
+        function clickOutside(e) {
+            document.addEventListener("mousedown",(e) => {
+                if (!coffeeModalRef.current?.contains(e.target)) {
+                    setShowCoffeeModal(false)
+                }
+            })
+        }
+        clickOutside()
+        return () => {
+            document.removeEventListener("mousedown",clickOutside)
+        }
+    },[])
 
     useEffect(() => {
-        document.addEventListener("mousedown",(e) => {
-            if (!coffeeModalRef.current.contains(e.target)) {
-                setShowCoffeeModal(false)
-            }
-        })
             const fetchCoffees = async () => {
                     const result = await axios(`http://localhost:5000/coffee`)
                     setCoffees(result.data)
                     setLoading(false)
             }
             fetchCoffees()
-    })
+    },[])
 
     return (
         <aside>

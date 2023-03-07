@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "_id": "1",
         "name": "Black",
         "year": "1671",
         "caffeine_content": "12",
@@ -9,7 +9,7 @@
         "updatedAt": "2023-03-05T22:11:49.594+00:00"
     }, 
     {
-        "id": "2",
+        "_id": "2",
         "name": "Espresso",
         "year": "1906",
         "caffeine_content": "64",
@@ -18,7 +18,7 @@
         "updatedAt": "2023-02-05T22:11:49.594+00:00"
     },
         {
-        "id": "3",
+        "_id": "3",
         "name": "Latte",
         "year": "1950",
         "caffeine_content": "64",

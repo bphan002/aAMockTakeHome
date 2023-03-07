@@ -19,6 +19,7 @@ section {
 
 header {
   position: relative;
+  min-width:300px;
 }
 
 header, .border,.post-modal, input[name="title"], input[name="rating"], select[name="coffee"] {
@@ -113,8 +114,16 @@ header {
 
 .left-header {
   display:flex;
+
 }
 
+.left-column {
+  width: 75%;
+}
+
+.right-column {
+  width:20%;
+}
 .coffee-header {
   display:flex;
   justify-content: space-between;

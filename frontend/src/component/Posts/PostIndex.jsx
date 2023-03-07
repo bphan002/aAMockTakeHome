@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState} from 'react'
 import postSeed from '../../SeedData/post.json'
 import PostIndexItem from './PostIndexItem'
 import axios from 'axios'
 const PostIndex = () => {
     const [ posts, setPosts] = useState(null)
     const [ loading, setLoading] = useState(true)
+
 
     useEffect(()=> {
         const fetchPosts = async () => {
@@ -13,8 +14,8 @@ const PostIndex = () => {
             setLoading(false)
          }
         fetchPosts()
-    },[])
-
+    },[posts])
+    console.log('index')
     return (
         <>
             {loading && <div>Loading...</div>}
