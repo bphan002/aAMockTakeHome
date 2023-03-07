@@ -34,6 +34,7 @@ const CoffeeModal = () => {
                         type="text" 
                         name="name" 
                         id="name"
+                        required
                         onChange={e=>handleChange(e)} 
                     />
                 </div>
@@ -44,7 +45,8 @@ const CoffeeModal = () => {
                         max="2023" 
                         type="number" 
                         name="year" 
-                        id="year" 
+                        id="year"
+                        required 
                         onChange={e=>handleChange(e)} 
                     />
                 </div>
@@ -54,6 +56,7 @@ const CoffeeModal = () => {
                         type="text" 
                         name="caffeine" 
                         id="caffeine"
+                        required
                         onChange={e=>handleChange(e)} 
                     />
                 </div>

@@ -65,6 +65,7 @@ const PostModal = ({modalState}) => {
                         name="title" 
                         id="title"
                         placeholder='Title'
+                        required
                         onChange={e => handleChange(e)} 
                     />
                 </div>
@@ -78,7 +79,8 @@ const PostModal = ({modalState}) => {
                             min="1" 
                             max="5" 
                             id="rating"
-                            placeholder='Rating' 
+                            placeholder='Rating'
+                            required 
                             onChange={e => handleChange(e)} 
                         />
                     </div>
@@ -93,7 +95,7 @@ const PostModal = ({modalState}) => {
                 </div>
 
                 <textarea 
-                    name="text" 
+                    name="text"
                     id="text" 
                     cols="34" 
                     rows="15"
